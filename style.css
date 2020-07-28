@@ -1,0 +1,110 @@
+html{
+    font-size: 70%;
+}
+
+body{
+    box-sizing: border-box;
+    background-image:linear-gradient(to right, rgba(243, 192, 26, 0.548),rgba(241, 112, 53, 0.705)),url(page.jpg) ;
+    background-size: cover;
+}
+
+.login_page{
+    height: 95vh;
+    padding: 2rem;
+    background-color:transparent;
+    text-align: center;
+    margin-top: 25vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    
+    
+}
+
+.heading{
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 700;
+    color: rgb(255, 248, 248);
+    animation-name: walkinto;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    transition: all .2s;
+}
+
+.heading:hover{
+    transform: scale(1.5);
+    text-shadow: 2rem 1rem 1.2rem rgba(black, .2);
+    
+}
+
+@keyframes walkinto {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px); }
+   
+    75% {
+      opacity: 1;
+      transform: translateY(10px); }
+    100% {
+      opacity: 1;
+      transform: translateY(0); } 
+    
+}
+
+
+.form_group{
+    margin-bottom: 15px;
+}
+
+.form-input{
+    font-size:15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: rgb(36, 35, 35);
+    padding: 7px 7px 0px 0.5rem;
+    background-color: #faf0f0d8;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid rgb(56, 56, 56);
+    width: 35%;
+    display: inline-block;
+
+
+
+}
+
+.form-input:focus{
+    outline:none;
+    border-bottom:2px solid rgb(247, 105, 10) ;
+
+}
+
+.form-input::-webkit-input-placeholder{
+    color: rgb(143, 140, 140);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.form_submit{
+   padding: 7px ;
+   background-color: rgb(61, 60, 60);
+   color: white;
+   border:none;
+   border-radius: 4px;
+   transition: all .2s;
+
+}
+
+.form_submit:hover{
+    transform: scale(1.2);
+    box-shadow: 0 1.5rem 2rem rgba(black, .2);
+    color:black;
+    background-color: white;
+}
+
+.form_submit:active{
+    outline: none;
+    background-color:rgb(247, 105, 10) ;
+}
